@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "freya-new"
+    }
+  },
+  "defaultProject": "freya-new",
+  "cli": {
+    "analytics": "71ab5525-faa0-4230-9a12-6b177c19401e"
+  }
 }
