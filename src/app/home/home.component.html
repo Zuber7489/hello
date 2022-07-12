@@ -1,0 +1,29 @@
+<app-header></app-header>
+
+<section>
+  <header>
+    <h1>Works to be done</h1>
+    <form action="#">
+      <input
+        type="text"
+        id="input-form-text"
+        placeholder="Enter the Work"
+        #task
+        
+      /><button (focus)="task.value=' '">clear</button>
+      <button id="input-form-btn" (click)="addTask(task.value)">
+        <i class="fa-solid fa-plus"></i>
+      </button>
+    </form>
+    <ul *ngFor="let hakela of list">
+      <li>{{ hakela.kuchbhi }}    <button
+        class="btn btn-primary alert-danger zuber"
+        (click)="remove(hakela.id)">
+        Remove
+      </button></li>
+  
+    </ul>
+  </header>
+
+  <div class="container"></div>
+</section>
